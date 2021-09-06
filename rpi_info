@@ -1,0 +1,77 @@
+pi@comitup-427:~ $ cat /proc/cpuinfo
+processor	: 0
+model name	: ARMv6-compatible processor rev 7 (v6l)
+BogoMIPS	: 697.95
+Features	: half thumb fastmult vfp edsp java tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xb76
+CPU revision	: 7
+
+Hardware	: BCM2835
+Revision	: 9000c1
+Serial		: 0000000023d0e18f
+Model		: Raspberry Pi Zero W Rev 1.1
+pi@comitup-427:~ $ cat /etc/*-release
+PRETTY_NAME="Raspbian GNU/Linux 10 (buster)"
+NAME="Raspbian GNU/Linux"
+VERSION_ID="10"
+VERSION="10 (buster)"
+VERSION_CODENAME=buster
+ID=raspbian
+ID_LIKE=debian
+HOME_URL="http://www.raspbian.org/"
+SUPPORT_URL="http://www.raspbian.org/RaspbianForums"
+BUG_REPORT_URL="http://www.raspbian.org/RaspbianBugs"
+pi@comitup-427:~ $ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        29G  3.3G   24G  12% /
+devtmpfs        183M     0  183M   0% /dev
+tmpfs           216M     0  216M   0% /dev/shm
+tmpfs           216M  3.5M  212M   2% /run
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           216M     0  216M   0% /sys/fs/cgroup
+/dev/mmcblk0p1  247M   49M  199M  20% /boot
+tmpfs            43M  4.0K   43M   1% /run/user/1000
+pi@comitup-427:~ $ cat /proc/version
+Linux version 5.10.52+ (dom@buildbot) (arm-linux-gnueabihf-gcc-8 (Ubuntu/Linaro 8.4.0-3ubuntu1) 8.4.0, GNU ld (GNU Binutils for Ubuntu) 2.34) #1441 Tue Aug 3 18:08:18 BST 2021
+pi@comitup-427:~ $ cat /proc/meminfo
+MemTotal:         440356 kB
+MemFree:           76316 kB
+MemAvailable:     215608 kB
+Buffers:           36800 kB
+Cached:           151652 kB
+SwapCached:           28 kB
+Active:           105688 kB
+Inactive:         219384 kB
+Active(anon):        952 kB
+Inactive(anon):   146084 kB
+Active(file):     104736 kB
+Inactive(file):    73300 kB
+Unevictable:          16 kB
+Mlocked:              16 kB
+SwapTotal:        102396 kB
+SwapFree:          99836 kB
+Dirty:                20 kB
+Writeback:             0 kB
+AnonPages:        136624 kB
+Mapped:           108620 kB
+Shmem:             10416 kB
+KReclaimable:      12620 kB
+Slab:              24000 kB
+SReclaimable:      12620 kB
+SUnreclaim:        11380 kB
+KernelStack:        1448 kB
+PageTables:         3900 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      322572 kB
+Committed_AS:     937696 kB
+VmallocTotal:     573440 kB
+VmallocUsed:        4076 kB
+VmallocChunk:          0 kB
+Percpu:               96 kB
+CmaTotal:          65536 kB
+CmaFree:           27760 kB
